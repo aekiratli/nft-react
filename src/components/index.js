@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  background-color: #282c34;
-  min-height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,8 +9,14 @@ export const Header = styled.header`
 `;
 
 export const Body = styled.div`
+  background: url('https://uploads-ssl.webflow.com/613c014766b46f33fb6a24a5/6147aa72bf08d48405b729bf_Masthead%402x.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
   align-items: center;
-  background-color: #282c34;
+  background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
@@ -52,3 +56,14 @@ export const Button = styled.button`
     outline: none;
   }
 `;
+
+export const Background = styled.div`
+background-color: #282c34;
+
+  background: url('https://uploads-ssl.webflow.com/613c014766b46f33fb6a24a5/6147aa72bf08d48405b729bf_Masthead%402x.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  `
