@@ -17,7 +17,7 @@ function App() {
         </Header>
 
         <Switch>
-          <Home>
+          <Home provider={provider}>
 
           </Home>
         </Switch>

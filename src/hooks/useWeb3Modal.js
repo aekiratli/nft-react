@@ -34,9 +34,18 @@ function useWeb3Modal(config = {}) {
   // Open wallet selection modal.
   const loadWeb3Modal = useCallback(async () => {
     const newProvider = await web3Modal.connect();
-    setProvider(new Web3Provider(newProvider));
-  }, [web3Modal]);
 
+    const checkProvider = new Web3Provider(newProvider);
+    const netInfo = await checkProvider.getNetwork();
+    console.log(netInfo.name);
+    if (netInfo.name != "rinkeby")
+    {
+      return
+    }
+    setProvider(checkProvider);
+
+    
+  }, [web3Modal]);
   const logoutOfWeb3Modal = useCallback(
     async function () {
       await web3Modal.clearCachedProvider();
