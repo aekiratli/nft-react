@@ -40,7 +40,7 @@ function Teams ({provider}) {
       <CurrentSupply/>
 
       Whales to mint!
-
+      Price = 0.5 ETH
        <Button onClick={()=> counter(true)}>+</Button>
         <p>{mintAmount}</p>
         <Button onClick={()=> counter(false)}>-</Button>
