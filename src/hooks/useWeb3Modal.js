@@ -38,7 +38,7 @@ function useWeb3Modal(config = {}) {
     const checkProvider = new Web3Provider(newProvider);
     const netInfo = await checkProvider.getNetwork();
     console.log(netInfo.name);
-    if (netInfo.name != "rinkeby")
+    if (netInfo.name !== "rinkeby")
     {
       return
     }

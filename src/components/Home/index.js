@@ -4,7 +4,7 @@ import BigNumber from "bignumber.js";
 import { Contract } from "@ethersproject/contracts";
 import addresses from "../../contracts/contracts";
 import abis from "../../contracts/abis";
-import { Body, Button, Header, Image, Link } from "..";
+import { Body, Button, Image } from "..";
 import CurrentSupply from "./currentSupply";
 
 

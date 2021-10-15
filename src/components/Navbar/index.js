@@ -1,17 +1,8 @@
 
 import React, { useEffect, useState } from "react";
 import {
-    Nav,
-    NavLink,
-    LeftWrapper,
-    RightWrapper,
-    styledDiv,
-    Title,
-    Bars,
-    NavMenu,
     Discord,
     Twitter,
-    Fish,
     SocialButton,
     Button
 } from './NavbarElements';

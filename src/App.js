@@ -1,9 +1,9 @@
 import React from "react";
 import useWeb3Modal from "./hooks/useWeb3Modal";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import NavBar from "./components/Navbar"
 import Home from "./components/Home"
-import { Body, Button, Header, Image, Background } from "./components";
+import { Header, Background } from "./components";
 
 
 function App() {
